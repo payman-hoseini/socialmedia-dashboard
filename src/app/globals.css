@@ -105,3 +105,10 @@
   .slider.round:before {
     border-radius: 50%;
   }
+
+  .borderInstagram {
+    border-image: linear-gradient(to right ,hsl(37, 97%, 70%) , hsl(329, 70%, 58%));
+    border-top: 4px;
+    border-style: solid;
+    padding: 5px
+  }
