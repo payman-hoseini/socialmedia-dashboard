@@ -8,14 +8,16 @@ export default function Home() {
   const [darkMode,setDarkMode] = useState<boolean>(false)
   return (
     <>
-    <div className={`${darkMode ? "dark" : "light"} bg-top-background h-[28vh] rounded-b-3xl`}>
-        <div className="max-w-[1440px] w-[90vw] mx-auto">
-            <Header setDarkMode={setDarkMode} darkMode={darkMode}/>
-            <Summery />
-            <Cards darkMode={darkMode}/>
-        </div>
+    <div className={`${darkMode ? "dark" : "light"} bg-background h-[370vh] md:h-[120vh] 2xl:h-screen  bg-fixed`}>
+      <div className={`${darkMode ? "dark" : "light"} bg-top-background h-[28vh] rounded-b-3xl`}>
+          <div className="max-w-[1440px] w-[90vw] mx-auto">
+              <Header setDarkMode={setDarkMode} darkMode={darkMode}/>
+              <Summery />
+              <Cards darkMode={darkMode}/>
+          </div>
+      </div>
     </div>
-    <div className={`${darkMode ? "dark" : "light"} bg-background h-screen  bg-scroll`}></div>
+    {/* <div className={`${darkMode ? "dark" : "light"} bg-background h-screen  bg-scroll`}></div> */}
     </>
   );
 }
