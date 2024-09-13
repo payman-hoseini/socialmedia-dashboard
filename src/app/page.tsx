@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Cards from "./components/cards";
 import Header from "./components/header"
 import Summery from "./components/summery"
